@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background con Scritta Horror</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+			width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            background-color: black;
+			opacity:0.8; 
+            animation: backgroundAnimation 20s linear infinite;
+            color: white;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #000000; }
+            5% { background-color: #FF0000; }
+            10% { background-color: #FF7F00; }
+            15% { background-color: #FFFF00; }
+            20% { background-color: #7FFF00; }
+            25% { background-color: #00FF00; }
+            30% { background-color: #00FF7F; }
+            35% { background-color: #00FFFF; }
+            40% { background-color: #007FFF; }
+            45% { background-color: #0000FF; }
+            50% { background-color: #7F00FF; }
+            55% { background-color: #FF00FF; }
+            60% { background-color: #FF007F; }
+            65% { background-color: #A00000; }
+            70% { background-color: #A05F00; }
+            75% { background-color: #A0A000; }
+            80% { background-color: #5FA000; }
+            85% { background-color: #00A000; }
+            90% { background-color: #00A05F; }
+            95% { background-color: #00A0A0; }
+            100% { background-color: #000000; }
+        }
+
+        .horror-text {
+            font-size: 2rem;
+            font-family: 'Creepster', cursive;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 10px;
+            animation: pulsate 1.5s infinite;
+        }
+
+        @keyframes pulsate {
+            0%, 100% { transform: scale(1); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .player {
+            position: absolute;
+            bottom: 100px; /* Posiziona sopra la sezione RevolverMaps */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin: 10px;
+        }
+
+        .revolvermaps {
+            color: #FFFF00; 
+            font-family: Arial, sans-serif; 
+            font-size: 33px; 
+            position: absolute;
+            bottom: 20px; /* Posiziona nella parte inferiore */
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 10px;
+}
+#staklo {   
+float:right;
+position: fixed;
+background-position: 50% -130vh, 0% 0%;
+width: 100vw;
+height: 100vh;
+top: 0px;
+font: 500 20px/20px 'Mythos', sans-serif;
+padding: 0;
+margin: 0px;
+transform: rotate(-0deg);
+z-index: 1;
+opacity:1; 
+text-align:center;
+}
+#oblak {   
+float:right;
+position: fixed;
+background-position: 50%;
+top: 130px;
+padding: 0;
+left: 473px;
+transform: rotate(-0deg);
+z-index: 1;
+opacity:1; 
+text-align:center;
+}
+#lajsna {  
+float:right;
+position: fixed;
+background-position: 50%;
+top: 61px;
+padding: 0;
+left: 780px;
+transform: rotate(-0deg);
+z-index: 1;
+opacity:1; 
+text-align:center;
+}
+    </style>
+</head>
+<body>
+<div id="body">  
+<div>
+<img src="https://u.cubeupload.com/extralux/356.png" 
+</div>
+<div id="staklo"> 
+<div>
+<img src="https://u.cubeupload.com/extralux/tamnostaklo2320x1080.png" 
+</div>
+<div id="oblak"> 
+<div>
+<img src="https://u.cubeupload.com/extralux/oblaksvjetli.png" top 130px center no-repeat">
+</div>
+</div>
+<div id="lajsna"> 
+<img src="https://u.cubeupload.com/extralux/uskalajsna271.gif" 
+</div>
+</body>
+
+</html>
